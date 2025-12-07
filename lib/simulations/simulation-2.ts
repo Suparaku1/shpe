@@ -1,0 +1,283 @@
+import type { SimulationData } from "./index"
+
+export const simulation2: SimulationData = {
+  id: 2,
+  title: "Siguria e Rrjetit WiFi dhe MikroTik",
+  description: "Menaxhimi i sigurt i rrjeteve wireless dhe pajisjeve MikroTik",
+  icon: "Wifi",
+  context: "Ju jeni përgjegjës për menaxhimin e rrjetit WiFi dhe routerave MikroTik në shkollë.",
+  steps: [
+    {
+      id: 1,
+      type: "situate",
+      location: "mikrotik",
+      content: "Vëreni që routeri MikroTik ende ka kredencialet default 'admin/admin' që nga instalimi.",
+      question: "Cili është veprimi i parë që duhet të merrni?",
+      options: [
+        { id: 1, text: "E lë si është sepse punon mirë", correct: false },
+        { id: 2, text: "Ndërroj menjëherë fjalëkalimin me një të fortë dhe unik", correct: true },
+        { id: 3, text: "E shkëput routerin nga rrjeti", correct: false },
+        { id: 4, text: "Instaloj firmware të ri", correct: false },
+      ],
+      explanation: "Kredencialet default janë të njohura publikisht dhe duhet ndërruar menjëherë.",
+    },
+    {
+      id: 2,
+      type: "ndodhi",
+      location: "mikrotik",
+      content: "Gjatë kontrollit të logeve, vëreni përpjekje të shumta login nga IP të huaja në portën 8291 (Winbox).",
+      question: "Çfarë veprimi merrni?",
+      options: [
+        { id: 1, text: "Injoroj sepse sistemi i refuzoi", correct: false },
+        {
+          id: 2,
+          text: "Kufizoj qasjen Winbox vetëm nga IP-të e brendshme dhe aktivizoj firewall rules",
+          correct: true,
+        },
+        { id: 3, text: "Çaktivizoj Winbox plotësisht", correct: false },
+        { id: 4, text: "Ndërroj vetëm portin e Winbox", correct: false },
+      ],
+      explanation: "Kufizimi i qasjes nga IP specifike dhe firewall rules parandalojnë sulmet brute-force.",
+    },
+    {
+      id: 3,
+      type: "pyetje",
+      location: "laborator",
+      content: "Një mësues pyet: 'Cili lloj enkriptimi WiFi duhet të përdorim për rrjetin e shkollës?'",
+      question: "Çfarë rekomandoni?",
+      options: [
+        { id: 1, text: "WEP sepse është më i lehtë për tu konfiguruar", correct: false },
+        { id: 2, text: "WPA3 ose WPA2-Enterprise me autentikim RADIUS", correct: true },
+        { id: 3, text: "Pa enkriptim për lehtësi", correct: false },
+        { id: 4, text: "WPA me fjalëkalim të thjeshtë", correct: false },
+      ],
+      explanation: "WPA3/WPA2-Enterprise ofrojnë sigurinë më të lartë për mjedise arsimore.",
+    },
+    {
+      id: 4,
+      type: "mesazh",
+      location: "security",
+      content: "Merrni alarm nga sistemi: 'Rogue Access Point detected - SSID: Shkolla_WiFi_FALAS'.",
+      question: "Si reagoni?",
+      options: [
+        { id: 1, text: "E injoroj sepse mund të jetë gabim sistemi", correct: false },
+        { id: 2, text: "Lokalizoj dhe eliminoj access point-in e paautorizuar menjëherë", correct: true },
+        { id: 3, text: "E shtoj në listën e bardhë", correct: false },
+        { id: 4, text: "Pres derisa dikush të ankohet", correct: false },
+      ],
+      explanation: "Rogue AP mund të përdoret për sulme man-in-the-middle dhe duhet eliminuar menjëherë.",
+    },
+    {
+      id: 5,
+      type: "telefonata",
+      location: "laborator",
+      content:
+        "Një nxënës telefonon dhe pyet nëse mund ti jepni fjalëkalimin e WiFi-t të mësuesve sepse 'interneti i nxënësve është i ngadaltë'.",
+      question: "Si përgjigjeni?",
+      options: [
+        { id: 1, text: "I jap fjalëkalimin sepse është nxënës i mirë", correct: false },
+        { id: 2, text: "Refuzoj dhe shpjegoj se rrjetet janë të ndara për arsye sigurie", correct: true },
+        { id: 3, text: "I jap fjalëkalimin por i them të mos e ndajë", correct: false },
+        { id: 4, text: "E pyes drejtorin çfarë të bëj", correct: false },
+      ],
+      explanation:
+        "Segmentimi i rrjetit është esencial për sigurinë. Nxënësit nuk duhet të kenë qasje në rrjetet e stafit.",
+    },
+    {
+      id: 6,
+      type: "situate",
+      location: "mikrotik",
+      content:
+        "Firmware i routerit MikroTik është version 6.42 ndërsa versioni aktual është 7.12 me përditësime sigurie kritike.",
+      question: "Çfarë veprimi merrni?",
+      options: [
+        { id: 1, text: "E lë si është sepse punon", correct: false },
+        { id: 2, text: "Planifikoj përditësimin e firmware-it duke bërë backup paraprakisht", correct: true },
+        { id: 3, text: "Përditësoj menjëherë pa backup", correct: false },
+        { id: 4, text: "Pres derisa të ketë probleme", correct: false },
+      ],
+      explanation: "Përditësimet e sigurisë janë kritike, por gjithmonë bëni backup para se të përditësoni.",
+    },
+    {
+      id: 7,
+      type: "ndodhi",
+      location: "serveroom",
+      content:
+        "Monitorimi tregon traffic të pazakontë - 500 Mbps bandwidth duke u përdorur nga një MAC adresë e panjohur.",
+      question: "Çfarë bëni?",
+      options: [
+        { id: 1, text: "Pres derisa të ulet traffiku", correct: false },
+        { id: 2, text: "Identifikoj pajisjen, e bllokój MAC adresën dhe hetoj aktivitetin", correct: true },
+        { id: 3, text: "Rris bandwidth-in e përgjithshëm", correct: false },
+        { id: 4, text: "Ristarton routerin", correct: false },
+      ],
+      explanation: "Traffiku i pazakontë mund të tregojë kompromitim ose përdorim të paautorizuar.",
+    },
+    {
+      id: 8,
+      type: "tekst",
+      location: "ambjent",
+      content:
+        "Një vizitor kërkon fjalëkalimin e WiFi për 'një punë të shpejtë'. Nuk ka rrjet të veçantë për vizitorë.",
+      question: "Si veproni?",
+      options: [
+        { id: 1, text: "I jap fjalëkalimin e rrjetit të stafit", correct: false },
+        { id: 2, text: "Refuzoj dhe rekomandoj krijimin e rrjetit guest të izoluar", correct: true },
+        { id: 3, text: "I jap fjalëkalimin e nxënësve", correct: false },
+        { id: 4, text: "E lidhë me kabllon ethernet", correct: false },
+      ],
+      explanation: "Vizitorët duhet të kenë rrjet të veçantë guest të izoluar nga rrjeti i brendshëm.",
+    },
+    {
+      id: 9,
+      type: "mesazh",
+      location: "mikrotik",
+      content: "Vëreni që dikush ka aktivizuar 'IP > Services > API' me akses nga çdo IP pa autentikim.",
+      question: "Çfarë veprimi merrni menjëherë?",
+      options: [
+        { id: 1, text: "E lë sepse mund të duhet për monitoring", correct: false },
+        { id: 2, text: "Çaktivizoj API-n ose e kufizoj vetëm nga IP të autorizuara me autentikim", correct: true },
+        { id: 3, text: "Ndërroj vetëm portin e API", correct: false },
+        { id: 4, text: "Shtoj rregull firewall për logim", correct: false },
+      ],
+      explanation: "API pa autentikim është rrezik i madh sigurie dhe duhet çaktivizuar ose kufizuar menjëherë.",
+    },
+    {
+      id: 10,
+      type: "situate",
+      location: "pajisje",
+      content: "Gjeni një access point shtesë të lidhur në prizë në një klasë, që krijon rrjet 'Internet_Falas'.",
+      question: "Çfarë bëni?",
+      options: [
+        { id: 1, text: "E lë sepse ndihmon mbulimin", correct: false },
+        { id: 2, text: "E shkëput menjëherë, dokumentoj dhe raportoj incidentin", correct: true },
+        { id: 3, text: "E konfiguroj me fjalëkalim", correct: false },
+        { id: 4, text: "Pyes se kush e vendosi", correct: false },
+      ],
+      explanation: "Access points të paautorizuar janë rrezik sigurie dhe duhet hequr menjëherë.",
+    },
+  ],
+  testQuestions: [
+    {
+      id: 1,
+      question: "Cili enkriptim WiFi është më i sigurt?",
+      options: [
+        { id: 1, text: "WEP", correct: false },
+        { id: 2, text: "WPA", correct: false },
+        { id: 3, text: "Pa enkriptim", correct: false },
+        { id: 4, text: "WPA3", correct: true },
+      ],
+    },
+    {
+      id: 2,
+      question: "Çfarë është Rogue Access Point?",
+      options: [
+        { id: 1, text: "AP zyrtar i shkollës", correct: false },
+        { id: 2, text: "AP për vizitorë", correct: false },
+        { id: 3, text: "AP i paautorizuar që mund të përdoret për sulme", correct: true },
+        { id: 4, text: "AP rezervë", correct: false },
+      ],
+    },
+    {
+      id: 3,
+      question: "Pse është e rëndësishme segmentimi i rrjetit?",
+      options: [
+        { id: 1, text: "Për shpejtësi më të madhe", correct: false },
+        { id: 2, text: "Për të izoluar traffikun dhe kufizuar qasjen", correct: true },
+        { id: 3, text: "Për të kursyer bandwidth", correct: false },
+        { id: 4, text: "Për estetikë", correct: false },
+      ],
+    },
+    {
+      id: 4,
+      question: "Çfarë duhet të bëni para përditësimit të firmware-it?",
+      options: [
+        { id: 1, text: "Backup i konfigurimit", correct: true },
+        { id: 2, text: "Ristarton routerin", correct: false },
+        { id: 3, text: "Fshij logjet", correct: false },
+        { id: 4, text: "Asgjë", correct: false },
+      ],
+    },
+    {
+      id: 5,
+      question: "Cilat porta duhet të kufizohen në MikroTik?",
+      options: [
+        { id: 1, text: "Vetëm porta 80", correct: false },
+        { id: 2, text: "Asnjë portë", correct: false },
+        { id: 3, text: "Vetëm porta 443", correct: false },
+        { id: 4, text: "Winbox (8291), SSH (22), API (8728)", correct: true },
+      ],
+    },
+    {
+      id: 6,
+      question: "Çfarë është sulmi Man-in-the-Middle?",
+      options: [
+        { id: 1, text: "Virus kompjuteri", correct: false },
+        { id: 2, text: "Sulm ku hakeri ndërhyn në komunikimin mes dy palëve", correct: true },
+        { id: 3, text: "Sulm fizik", correct: false },
+        { id: 4, text: "Spam email", correct: false },
+      ],
+    },
+    {
+      id: 7,
+      question: "Pse duhet ndërruar kredencialet default?",
+      options: [
+        { id: 1, text: "Për estetikë", correct: false },
+        { id: 2, text: "Për të kursyer memorie", correct: false },
+        { id: 3, text: "Sepse janë të njohura publikisht dhe lehtësojnë sulmet", correct: true },
+        { id: 4, text: "Nuk është e nevojshme", correct: false },
+      ],
+    },
+    {
+      id: 8,
+      question: "Çfarë është rrjeti Guest?",
+      options: [
+        { id: 1, text: "Rrjet për administratorët", correct: false },
+        { id: 2, text: "Rrjet i izoluar për vizitorë", correct: true },
+        { id: 3, text: "Rrjet backup", correct: false },
+        { id: 4, text: "Rrjet testimi", correct: false },
+      ],
+    },
+    {
+      id: 9,
+      question: "Si identifikoni aktivitet të dyshimtë në rrjet?",
+      options: [
+        { id: 1, text: "Duke monitoruar logjet, traffikun dhe MAC adresat e panjohura", correct: true },
+        { id: 2, text: "Duke ristaruar routerin", correct: false },
+        { id: 3, text: "Duke pyetur përdoruesit", correct: false },
+        { id: 4, text: "Duke pritur ankesa", correct: false },
+      ],
+    },
+    {
+      id: 10,
+      question: "Çfarë është RADIUS?",
+      options: [
+        { id: 1, text: "Lloj kablloi", correct: false },
+        { id: 2, text: "Softuer antivirus", correct: false },
+        { id: 3, text: "Lloj routeri", correct: false },
+        { id: 4, text: "Protokoll autentikimi për rrjete enterprise", correct: true },
+      ],
+    },
+  ],
+  elaborationQuestion: {
+    question:
+      "Përshkruani hapat e konfigurimit të sigurt të një routeri MikroTik për një shkollë. Cilat masa sigurie do të implementoni?",
+    keywords: [
+      "fjalëkalim",
+      "firewall",
+      "enkriptim",
+      "WPA",
+      "segment",
+      "VLAN",
+      "backup",
+      "përditësim",
+      "firmware",
+      "port",
+      "Winbox",
+      "SSH",
+      "API",
+      "log",
+      "monitor",
+    ],
+  },
+}
