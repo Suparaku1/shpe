@@ -68,12 +68,12 @@ export const staffMembers = {
   serverRoom2: {
     name: "Alda Jolldashi",
     role: "Dhoma e Server 2",
-    photo: "/professional-woman-it-administrator.jpg",
+    photo: "/professional-development-for-women.jpg",
   },
   socialMedia: {
     name: "Behexhet Kafexhiu",
     role: "Menaxher Rrjeteve Sociale",
-    photo: "/professional-man-social-media-manager.jpg",
+    photo: "/professional-development-for-men.jpg",
   },
 }
 
