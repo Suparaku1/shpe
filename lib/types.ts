@@ -68,12 +68,12 @@ export const staffMembers = {
   serverRoom2: {
     name: "Alda Jolldashi",
     role: "Dhoma e Server 2",
-    photo: "/professional-woman-it-administrator.jpg",
+    photo: "/professional-development-for-women.jpg",
   },
   socialMedia: {
     name: "Behexhet Kafexhiu",
     role: "Menaxher Rrjeteve Sociale",
-    photo: "/professional-man-social-media-manager.jpg",
+    photo: "/professional-development-for-men.jpg",
   },
 }
 
@@ -128,9 +128,21 @@ export const certificateSignatures = {
 }
 
 export const simulationImages = {
-  phishing: ["/phishing-email-warning-computer-screen.jpg", "/suspicious-email-attachment-warning.jpg", "/fake-login-page-scam.jpg"],
-  socialEngineering: ["/social-engineering-attack-phone-call.jpg", "/impersonation-attack-office.jpg", "/tailgating-security-breach.jpg"],
-  passwords: ["/strong-password-security-lock.jpg", "/password-manager-application.jpg", "/two-factor-authentication-phone.jpg"],
+  phishing: [
+    "/phishing-email-warning-computer-screen.jpg",
+    "/suspicious-email-attachment-warning.jpg",
+    "/fake-login-page-scam.jpg",
+  ],
+  socialEngineering: [
+    "/social-engineering-attack-phone-call.jpg",
+    "/impersonation-attack-office.jpg",
+    "/tailgating-security-breach.jpg",
+  ],
+  passwords: [
+    "/strong-password-security-lock.jpg",
+    "/password-manager-application.jpg",
+    "/two-factor-authentication-phone.jpg",
+  ],
   wifi: ["/public-wifi-danger-hacker.jpg", "/vpn-secure-connection.jpg", "/man-in-middle-attack-diagram.jpg"],
   serverRoom: [
     "/server-room-data-center-security.jpg",

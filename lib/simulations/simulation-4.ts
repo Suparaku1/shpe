@@ -58,7 +58,7 @@ export const simulation4: SimulationData = {
       question: "Si përgjigjeni?",
       options: [
         { id: 1, text: "I jap fjalëkalimin sepse është nga IT", correct: false },
-        { id: 2, text: "Refuzoj dhe verifikoj me departamentin IT nëpërmjet kanaleve zyrtare", correct: true },
+        { id: 2, text: "Refuzoj dhe verifikoj me departamentin IT nëpërjet kanaleve zyrtare", correct: true },
         { id: 3, text: "I jap vetëm username", correct: false },
         { id: 4, text: "I them ta resetojë vetë", correct: false },
       ],
@@ -166,8 +166,8 @@ export const simulation4: SimulationData = {
       question: "Çfarë është 2FA?",
       options: [
         { id: 1, text: "Dy fjalëkalime", correct: false },
-        { id: 2, text: "Autentikim me dy faktorë të ndryshëm", correct: true },
-        { id: 3, text: "Dy llogari", correct: false },
+        { id: 2, text: "Dy llogari", correct: false },
+        { id: 3, text: "Autentikim me dy faktorë të ndryshëm", correct: true },
         { id: 4, text: "Dy pyetje sigurie", correct: false },
       ],
     },
@@ -176,9 +176,9 @@ export const simulation4: SimulationData = {
       question: "Pse nuk duhet ripërdorur fjalëkalimet?",
       options: [
         { id: 1, text: "Sepse harrohen", correct: false },
-        { id: 2, text: "Sepse nëse kompromutohet një, rrezikohen të gjitha", correct: true },
-        { id: 3, text: "Sepse janë të gjata", correct: false },
-        { id: 4, text: "Nuk ka problem të ripërdoren", correct: false },
+        { id: 2, text: "Sepse janë të gjata", correct: false },
+        { id: 3, text: "Nuk ka problem të ripërdoren", correct: false },
+        { id: 4, text: "Sepse nëse kompromutohet një, rrezikohen të gjitha", correct: true },
       ],
     },
     {
@@ -195,10 +195,10 @@ export const simulation4: SimulationData = {
       id: 5,
       question: "Kur duhet ndërruar fjalëkalimin?",
       options: [
-        { id: 1, text: "Kurrë", correct: false },
-        { id: 2, text: "Kur dyshoni kompromitim ose periodikisht sipas politikës", correct: true },
-        { id: 3, text: "Çdo ditë", correct: false },
-        { id: 4, text: "Vetëm kur e harroni", correct: false },
+        { id: 1, text: "Kur dyshoni kompromitim ose periodikisht sipas politikës", correct: true },
+        { id: 2, text: "Çdo ditë", correct: false },
+        { id: 3, text: "Vetëm kur e harroni", correct: false },
+        { id: 4, text: "Kurrë", correct: false },
       ],
     },
     {
@@ -216,9 +216,9 @@ export const simulation4: SimulationData = {
       question: "Pse janë të rrezikshme llogaritë e përbashkëta?",
       options: [
         { id: 1, text: "Sepse janë të shtrenjta", correct: false },
-        { id: 2, text: "Sepse pamundësojnë auditimin dhe rrisin rrezikun e kompromitimit", correct: true },
-        { id: 3, text: "Sepse janë të ngadalta", correct: false },
-        { id: 4, text: "Nuk janë të rrezikshme", correct: false },
+        { id: 2, text: "Sepse janë të ngadalta", correct: false },
+        { id: 3, text: "Nuk janë të rrezikshme", correct: false },
+        { id: 4, text: "Sepse pamundësojnë auditimin dhe rrisin rrezikun e kompromitimit", correct: true },
       ],
     },
     {
@@ -226,7 +226,7 @@ export const simulation4: SimulationData = {
       question: "Çfarë duhet të bëni nëse dikush kërkon fjalëkalimin tuaj me telefon?",
       options: [
         { id: 1, text: "Ja jepni nëse duket legjitime", correct: false },
-        { id: 2, text: "Refuzoni dhe verifikoni nëpërmjet kanaleve zyrtare", correct: true },
+        { id: 2, text: "Refuzoni dhe verifikoni nëpërjet kanaleve zyrtare", correct: true },
         { id: 3, text: "I thoni ta dërgojë me email", correct: false },
         { id: 4, text: "Ja jepni pjesërisht", correct: false },
       ],
@@ -236,19 +236,19 @@ export const simulation4: SimulationData = {
       question: "Cila është praktika më e mirë për pyetjet e sigurisë?",
       options: [
         { id: 1, text: "Përdorni përgjigje të vërteta që mund të gjenden online", correct: false },
-        { id: 2, text: "Përdorni përgjigje të rreme ose unike që vetëm ju i dini", correct: true },
-        { id: 3, text: "Përdorni të njëjtën përgjigje kudo", correct: false },
-        { id: 4, text: "Mos përdorni pyetje sigurie", correct: false },
+        { id: 2, text: "Përdorni të njëjtën përgjigje kudo", correct: false },
+        { id: 3, text: "Mos përdorni pyetje sigurie", correct: false },
+        { id: 4, text: "Përdorni përgjigje të rreme ose unike që vetëm ju i dini", correct: true },
       ],
     },
     {
       id: 10,
       question: "Çfarë tregon login nga vendndodhje e pazakontë?",
       options: [
-        { id: 1, text: "Përdorim normal", correct: false },
-        { id: 2, text: "Mundësi kompromitimi që duhet hetuar", correct: true },
-        { id: 3, text: "Gabim sistemi", correct: false },
-        { id: 4, text: "VPN i përdoruesit", correct: false },
+        { id: 1, text: "Mundësi kompromitimi që duhet hetuar", correct: true },
+        { id: 2, text: "Gabim sistemi", correct: false },
+        { id: 3, text: "VPN i përdoruesit", correct: false },
+        { id: 4, text: "Përdorim normal", correct: false },
       ],
     },
   ],

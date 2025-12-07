@@ -163,9 +163,9 @@ export const simulation2: SimulationData = {
       question: "Cili enkriptim WiFi është më i sigurt?",
       options: [
         { id: 1, text: "WEP", correct: false },
-        { id: 2, text: "WPA3", correct: true },
+        { id: 2, text: "WPA", correct: false },
         { id: 3, text: "Pa enkriptim", correct: false },
-        { id: 4, text: "WPA", correct: false },
+        { id: 4, text: "WPA3", correct: true },
       ],
     },
     {
@@ -173,8 +173,8 @@ export const simulation2: SimulationData = {
       question: "Çfarë është Rogue Access Point?",
       options: [
         { id: 1, text: "AP zyrtar i shkollës", correct: false },
-        { id: 2, text: "AP i paautorizuar që mund të përdoret për sulme", correct: true },
-        { id: 3, text: "AP për vizitorë", correct: false },
+        { id: 2, text: "AP për vizitorë", correct: false },
+        { id: 3, text: "AP i paautorizuar që mund të përdoret për sulme", correct: true },
         { id: 4, text: "AP rezervë", correct: false },
       ],
     },
@@ -192,10 +192,10 @@ export const simulation2: SimulationData = {
       id: 4,
       question: "Çfarë duhet të bëni para përditësimit të firmware-it?",
       options: [
-        { id: 1, text: "Asgjë", correct: false },
-        { id: 2, text: "Backup i konfigurimit", correct: true },
-        { id: 3, text: "Ristarton routerin", correct: false },
-        { id: 4, text: "Fshij logjet", correct: false },
+        { id: 1, text: "Backup i konfigurimit", correct: true },
+        { id: 2, text: "Ristarton routerin", correct: false },
+        { id: 3, text: "Fshij logjet", correct: false },
+        { id: 4, text: "Asgjë", correct: false },
       ],
     },
     {
@@ -203,9 +203,9 @@ export const simulation2: SimulationData = {
       question: "Cilat porta duhet të kufizohen në MikroTik?",
       options: [
         { id: 1, text: "Vetëm porta 80", correct: false },
-        { id: 2, text: "Winbox (8291), SSH (22), API (8728)", correct: true },
-        { id: 3, text: "Asnjë portë", correct: false },
-        { id: 4, text: "Vetëm porta 443", correct: false },
+        { id: 2, text: "Asnjë portë", correct: false },
+        { id: 3, text: "Vetëm porta 443", correct: false },
+        { id: 4, text: "Winbox (8291), SSH (22), API (8728)", correct: true },
       ],
     },
     {
@@ -223,8 +223,8 @@ export const simulation2: SimulationData = {
       question: "Pse duhet ndërruar kredencialet default?",
       options: [
         { id: 1, text: "Për estetikë", correct: false },
-        { id: 2, text: "Sepse janë të njohura publikisht dhe lehtësojnë sulmet", correct: true },
-        { id: 3, text: "Për të kursyer memorie", correct: false },
+        { id: 2, text: "Për të kursyer memorie", correct: false },
+        { id: 3, text: "Sepse janë të njohura publikisht dhe lehtësojnë sulmet", correct: true },
         { id: 4, text: "Nuk është e nevojshme", correct: false },
       ],
     },
@@ -242,10 +242,10 @@ export const simulation2: SimulationData = {
       id: 9,
       question: "Si identifikoni aktivitet të dyshimtë në rrjet?",
       options: [
-        { id: 1, text: "Duke pritur ankesa", correct: false },
-        { id: 2, text: "Duke monitoruar logjet, traffikun dhe MAC adresat e panjohura", correct: true },
-        { id: 3, text: "Duke ristaruar routerin", correct: false },
-        { id: 4, text: "Duke pyetur përdoruesit", correct: false },
+        { id: 1, text: "Duke monitoruar logjet, traffikun dhe MAC adresat e panjohura", correct: true },
+        { id: 2, text: "Duke ristaruar routerin", correct: false },
+        { id: 3, text: "Duke pyetur përdoruesit", correct: false },
+        { id: 4, text: "Duke pritur ankesa", correct: false },
       ],
     },
     {
@@ -253,9 +253,9 @@ export const simulation2: SimulationData = {
       question: "Çfarë është RADIUS?",
       options: [
         { id: 1, text: "Lloj kablloi", correct: false },
-        { id: 2, text: "Protokoll autentikimi për rrjete enterprise", correct: true },
-        { id: 3, text: "Softuer antivirus", correct: false },
-        { id: 4, text: "Lloj routeri", correct: false },
+        { id: 2, text: "Softuer antivirus", correct: false },
+        { id: 3, text: "Lloj routeri", correct: false },
+        { id: 4, text: "Protokoll autentikimi për rrjete enterprise", correct: true },
       ],
     },
   ],

@@ -49,11 +49,11 @@ export const simulation7: SimulationData = {
       question: "Çfarë lloj sulmi është ky?",
       options: [
         { id: 1, text: "Email legjitime nga drejtori", correct: false },
-        { id: 2, text: "CEO Fraud / Business Email Compromise - verifikoni nëpërmjet kanali tjetër", correct: true },
+        { id: 2, text: "CEO Fraud / Business Email Compromise - verifikoni nëpër kanali tjetër", correct: true },
         { id: 3, text: "Spam i zakonshëm", correct: false },
         { id: 4, text: "Gabim teknik", correct: false },
       ],
-      explanation: "CEO Fraud përdor urgjencë dhe autoritet false. Verifikoni gjithmonë nëpërmjet telefoni.",
+      explanation: "CEO Fraud përdor urgjencë dhe autoritet false. Verifikoni gjithmonë nëpër telefoni.",
     },
     {
       id: 4,
@@ -124,7 +124,7 @@ export const simulation7: SimulationData = {
       question: "Çfarë duhet të bëni?",
       options: [
         { id: 1, text: "Pranoj menjëherë", correct: false },
-        { id: 2, text: "Verifikoj identitetin nëpërmjet kanali tjetër para pranimit", correct: true },
+        { id: 2, text: "Verifikoj identitetin nëpër kanali tjetër para pranimit", correct: true },
         { id: 3, text: "Pranoj por kufizoj çfarë sheh", correct: false },
         { id: 4, text: "E bllokój pa verifikuar", correct: false },
       ],
@@ -175,8 +175,8 @@ export const simulation7: SimulationData = {
       question: "Çfarë është phishing?",
       options: [
         { id: 1, text: "Lloj peshkimi", correct: false },
-        { id: 2, text: "Sulm që përdor email/mesazhe false për të vjedhur informacion", correct: true },
-        { id: 3, text: "Virus", correct: false },
+        { id: 2, text: "Virus", correct: false },
+        { id: 3, text: "Sulm që përdor email/mesazhe false për të vjedhur informacion", correct: true },
         { id: 4, text: "Firewall", correct: false },
       ],
     },
@@ -185,9 +185,9 @@ export const simulation7: SimulationData = {
       question: "Çfarë është pretexting?",
       options: [
         { id: 1, text: "Shkrim i teksteve", correct: false },
-        { id: 2, text: "Krijim i një skenari/identiteti false për të marrë akses", correct: true },
-        { id: 3, text: "Enkriptim", correct: false },
-        { id: 4, text: "Backup", correct: false },
+        { id: 2, text: "Enkriptim", correct: false },
+        { id: 3, text: "Backup", correct: false },
+        { id: 4, text: "Krijim i një skenari/identiteti false për të marrë akses", correct: true },
       ],
     },
     {
@@ -204,10 +204,10 @@ export const simulation7: SimulationData = {
       id: 5,
       question: "Çfarë është tailgating?",
       options: [
-        { id: 1, text: "Ndjekje makinash", correct: false },
-        { id: 2, text: "Hyrje në zonë të sigurt duke ndjekur dikë të autorizuar", correct: true },
-        { id: 3, text: "Lloj enkriptimi", correct: false },
-        { id: 4, text: "Backup", correct: false },
+        { id: 1, text: "Hyrje në zonë të sigurt duke ndjekur dikë të autorizuar", correct: true },
+        { id: 2, text: "Lloj enkriptimi", correct: false },
+        { id: 3, text: "Backup", correct: false },
+        { id: 4, text: "Ndjekje makinash", correct: false },
       ],
     },
     {
@@ -225,8 +225,8 @@ export const simulation7: SimulationData = {
       question: "Si mbroheni nga CEO Fraud?",
       options: [
         { id: 1, text: "Duke ju besuar çdo emaili nga shefi", correct: false },
-        { id: 2, text: "Duke verifikuar kërkesat e pazakonshme nëpërmjet kanali tjetër", correct: true },
-        { id: 3, text: "Duke injoruar emailet", correct: false },
+        { id: 2, text: "Duke injoruar emailet", correct: false },
+        { id: 3, text: "Duke verifikuar kërkesat e pazakonshme nëpër kanali tjetër", correct: true },
         { id: 4, text: "Duke ndërruar email", correct: false },
       ],
     },
@@ -242,22 +242,22 @@ export const simulation7: SimulationData = {
     },
     {
       id: 9,
-      question: "Çfarë duhet të bëni nëse dikush kërkon informacion 'urgjent' nëpërmjet telefoni?",
+      question: "Çfarë duhet të bëni nëse dikush kërkon informacion 'urgjent' nëpër telefoni?",
       options: [
         { id: 1, text: "Jepni menjëherë sepse është urgjent", correct: false },
-        { id: 2, text: "Mos jepni dhe verifikoni nëpërmjet kanaleve zyrtare", correct: true },
-        { id: 3, text: "Jepni vetëm pak informacion", correct: false },
-        { id: 4, text: "Thirrni policinë", correct: false },
+        { id: 2, text: "Jepni vetëm pak informacion", correct: false },
+        { id: 3, text: "Thirrni policinë", correct: false },
+        { id: 4, text: "Mos jepni dhe verifikoni nëpër kanaleve zyrtare", correct: true },
       ],
     },
     {
       id: 10,
       question: "Si mund të përdoret informacioni në rrjetet sociale kundër jush?",
       options: [
-        { id: 1, text: "Nuk përdoret", correct: false },
-        { id: 2, text: "Për të krijuar sulme spear phishing të personalizuara", correct: true },
-        { id: 3, text: "Vetëm për reklama", correct: false },
-        { id: 4, text: "Vetëm nga miqtë", correct: false },
+        { id: 1, text: "Për të krijuar sulme spear phishing të personalizuara", correct: true },
+        { id: 2, text: "Vetëm për reklama", correct: false },
+        { id: 3, text: "Vetëm nga miqtë", correct: false },
+        { id: 4, text: "Nuk përdoret", correct: false },
       ],
     },
   ],
